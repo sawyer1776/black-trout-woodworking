@@ -25,7 +25,7 @@
 section {
 	margin-top: -5rem;
 	width: calc(100% + 1.5rem);
-	background-image: url('imgs/hero-background.jpg');
+	background-image: url('/imgs/hero-background.jpg');
 	background-size: contain;
 	background-position: left top;
 	background-repeat: no-repeat;
