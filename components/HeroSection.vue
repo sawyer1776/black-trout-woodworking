@@ -2,7 +2,7 @@
 	<section>
 		<h1>Welcome To Our Shop</h1>
 		<img
-			src="imgs/logo-transparent.png"
+			src="/imgs/logo-transparent.png"
 			alt="logo of a trout"
 		/>
 
