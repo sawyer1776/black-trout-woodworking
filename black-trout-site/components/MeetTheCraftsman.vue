@@ -1,7 +1,7 @@
 <template>
 	<section>
 		<img
-			src="imgs/profile.jpg"
+			src="imgs/profile.jpeg"
 			alt="A picture of the craftsman"
 		/>
 		<div class="text">

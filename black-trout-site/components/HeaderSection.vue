@@ -151,64 +151,30 @@ li:last-child {
 	display: none;
 }
 
-/* ---Landscape Tablets --- */
-/* @media (min-width: 550px) {
-	nav {
-		height: 8.5rem;
-	}
-	img {
-		width: 28rem;
-		height: auto;
-	}
-	button {
-		font-size: 2.4rem;
-		padding: 0.5rem 1rem;
-		box-shadow: 0.4rem 0.4rem 0 var(--dark-brown);
-	}
-	button:hover {
-		transform: translate(-0.08rem, -0.08rem);
-		box-shadow: 0.45rem 0.45rem 0 black;
-	}
-
-	button:active {
-		transform: translate(0.4rem, 0.4rem);
-		box-shadow: 0 0 0 black;
-	}
-	.icon {
-		margin-right: 2rem;
-		width: 5rem;
-		height: 5rem;
-	}
-} */
-
-/* ---Desktop--- */
-/* @media (min-width: 1090px) {
+@media (min-width: 1050px) {
 	.icon {
 		display: none;
 	}
 	.hidden {
 		display: flex;
 		flex-direction: row;
-		gap: 0;
+		gap: 1rem;
 	}
 	ul {
-		display: flex;
-		flex-direction: row;
-		gap: 0;
 		position: static;
 		background-color: transparent;
-		color: var(--brand-brown);
-		width: fit-content;
+
+		width: 100%;
 		justify-self: flex-end;
 
 		padding-right: 1rem;
 	}
 
 	li {
-		font-size: 2.1rem;
+		font-size: 2.5rem;
 		color: var(--brand-brown);
 		font-weight: 800;
-		width: 100%;
+		width: fit-content;
 		padding: 0.5rem 1rem;
 		text-align: center;
 		border-bottom: none;
@@ -226,5 +192,5 @@ li:last-child {
 	nav {
 		padding: 0.75rem 3rem;
 	}
-} */
+}
 </style>
