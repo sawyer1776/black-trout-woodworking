@@ -118,6 +118,7 @@
 				class="input"
 				name="file"
 				id="file"
+				@change="file = $event.target.files[0]"
 			/>
 			<label for="dimensions">Dimensions</label>
 			<input
@@ -226,6 +227,7 @@ export default {
 			emailAddr: '',
 			phoneNumber: '',
 			formSubmitted: false,
+			file: null,
 			error: '',
 			name: '',
 			email: '',
@@ -277,6 +279,7 @@ export default {
 							name: this.name,
 							email: this.email,
 							phone: this.phone,
+							file: this.file,
 							contactmethod: this.preffered,
 							description: this.description,
 							dimensions: this.dimensions,
@@ -297,6 +300,7 @@ export default {
 				}
 
 				this.name = '';
+				this.file = null;
 				this.email = '';
 				this.phone = '';
 				this.preffered = '';
