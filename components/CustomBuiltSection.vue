@@ -59,6 +59,13 @@ button {
 	margin-top: 1rem;
 	width: 90%;
 }
+.buttons {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
 @media (min-width: 1050px) {
 	section {
 		margin-top: -55rem;

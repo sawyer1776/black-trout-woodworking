@@ -116,7 +116,7 @@ ul {
 	position: absolute;
 	top: 7rem;
 	right: 0;
-	padding: 4rem;
+	padding: 3rem;
 	background-color: var(--dark-grey);
 	opacity: 95%;
 	display: flex;
@@ -132,7 +132,7 @@ li {
 	font-size: 3rem;
 	color: var(--offwhite);
 	font-weight: 600;
-	width: 70%;
+	width: 100%;
 	padding: 1.75rem 0.5rem;
 	text-align: right;
 	border-bottom: 2px solid var(--offwhite);

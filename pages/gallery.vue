@@ -7,8 +7,8 @@
 				v-for="(img, index) in imgList"
 				@click="currentImg = index + 1"
 				:src="`/imgs/${img}`"
-				:width="`${screenWidth > 1050 ? 300 : 200}px`"
-				:height="`${screenWidth > 1050 ? 300 : 200}px`"
+				width="250px"
+				height="250px"
 				alt=""
 			/>
 		</div>
