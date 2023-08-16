@@ -239,8 +239,8 @@ export default {
 			materials: '',
 			finish: '',
 			timeline: '',
-			budgetLow: 0.0,
-			budgetHigh: 0.0,
+			budgetLow: null,
+			budgetHigh: null,
 			emailIsValid: 'pending',
 			phoneIsValid: 'pending',
 			nameIsValid: 'pending',
@@ -310,8 +310,8 @@ export default {
 				this.materials = '';
 				this.finish = '';
 				this.timeline = '';
-				this.budgetLow = 0.0;
-				this.budgetHigh = 0.0;
+				this.budgetLow = null;
+				this.budgetHigh = null;
 
 				this.emailIsValid = 'pending';
 				this.phoneIsValid = 'pending';
@@ -612,6 +612,9 @@ label {
 		font-size: 2.25rem;
 
 		border: 2px solid lightgray;
+	}
+	.budget input {
+		width: 15rem;
 	}
 }
 </style>
