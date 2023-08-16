@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="container">
 		<div v-if="formSubmitted" class="submitted-good">
 			<h2>Form Submitted!</h2>
 			<p>Thank you, we will be in touch soon!</p>
@@ -118,7 +118,8 @@
 				class="input"
 				name="file"
 				id="file"
-				@change="file = $event.target.files[0]"
+				ref="file"
+				@change="handleUpload"
 			/>
 			<label for="dimensions">Dimensions</label>
 			<input
@@ -317,11 +318,18 @@ export default {
 				this.nameIsValid = 'pending';
 				this.hasBudget = false;
 				this.budgetIsValid = 'pending';
-				scrollTo(0, 0);
+				scrollTo({
+					top: 0,
+					behavior: 'smooth',
+				});
 			} else {
 				this.validateName();
 				this.validateEmail();
 				this.validatePhone();
+				scrollTo({
+					top: 0,
+					behavior: 'smooth',
+				});
 			}
 		},
 		validateName() {
@@ -391,10 +399,19 @@ export default {
 				this.validateEmail();
 			}
 		},
+
+		handleUpload() {
+			console.log(this.$refs.file.files);
+			this.file = this.$refs.file.files;
+		},
 	},
 };
 </script>
 <style scoped>
+.container {
+	width: 100%;
+	max-width: 750px;
+}
 form {
 	display: flex;
 	flex-direction: column;
@@ -403,7 +420,6 @@ form {
 	gap: 1rem;
 	width: 100%;
 	margin-bottom: 2rem;
-
 	padding: 2rem 1rem;
 	border: 2px solid var(--light-grey);
 	box-shadow: 1px 2px 14px -1px rgba(0, 0, 0, 0.25);
@@ -415,10 +431,8 @@ fieldset {
 .radio-buttons {
 	margin-top: 1rem;
 	width: 100%;
-
 	display: flex;
 	justify-content: center;
-
 	gap: 3rem;
 }
 
@@ -440,16 +454,8 @@ legend {
 	text-align: center;
 }
 
-img {
-	width: 100%;
-	height: auto;
-	margin-bottom: 1rem;
-	border-radius: 9px;
-	z-index: 2;
-}
 button {
 	font-size: 2rem;
-	z-index: 2;
 }
 
 .input {
@@ -522,9 +528,10 @@ button {
 	font-weight: 400;
 }
 
-.invalid {
+.invalid.input {
 	background-color: rgb(253, 181, 181);
-	/* border: 3px solid red; */
+	border: 2px solid rgb(198, 0, 0);
+	color: rgb(80, 0, 0);
 }
 
 input[type='radio']:checked + label {
@@ -543,6 +550,7 @@ label {
 	background-color: rgb(213, 253, 213);
 	padding: 2rem;
 	border: 2px solid green;
+	margin-bottom: 1rem;
 }
 
 .submitted-good h2 {
@@ -552,6 +560,7 @@ label {
 	background-color: rgb(253, 213, 213);
 	padding: 2rem;
 	border: 2px solid rgb(179, 0, 0);
+	margin-bottom: 1rem;
 }
 
 .submitted-error h2 {
@@ -578,53 +587,31 @@ label {
 	transform: translateY(0);
 }
 
-@media (min-width: 550px) {
-	section {
-		max-width: 65rem;
+@media (min-width: 850px) {
+	form {
+		padding: 6rem;
+		gap: 2rem;
 	}
-
-	.contact-container {
-		border-radius: 9px;
-		gap: 4rem;
-		padding: 5rem;
-		padding-bottom: 9rem;
-		box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.25);
+	.radio-buttons {
+		gap: 5rem;
 	}
-	h1 {
-		text-shadow: 2px 2px 0 black;
+	h2 {
+		margin-top: 4rem;
+		font-size: 2.75rem;
 	}
-
-	h3 {
-		font-size: 3.5rem;
-	}
-	img {
-		border-radius: 12px;
+	h3,
+	legend {
+		font-size: 2.25rem;
+		font-weight: 400;
+		text-align: center;
 	}
 	button {
-		font-size: 3.5rem;
-	}
-	form {
-		gap: 1.5rem;
+		font-size: 2.75rem;
 	}
 	.input {
-		padding: 1rem 2rem;
-		font-size: 4rem;
-		border-radius: 9px;
-	}
-	#description {
-		height: 20rem;
-	}
-	.icon {
-		width: 5rem;
-		height: 5rem;
-	}
-	.phone-number {
-		font-size: 4rem;
-		font-weight: 600;
-		border-radius: 12px;
-		border-top-left-radius: 0px;
-		border-top-right-radius: 0px;
-		margin-top: -2rem;
+		font-size: 2.25rem;
+
+		border: 2px solid lightgray;
 	}
 }
 </style>

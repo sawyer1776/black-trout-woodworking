@@ -5,7 +5,11 @@
 
 export default defineNuxtConfig({
 	devtools: { enabled: true },
-	modules: ['@nuxtjs/google-fonts', 'nuxt-icon'],
+	modules: [
+		'@nuxtjs/google-fonts',
+		'nuxt-icon',
+		'@nuxt/image',
+	],
 	googleFonts: {
 		families: {
 			'Alegreya Sans': {
@@ -13,5 +17,8 @@ export default defineNuxtConfig({
 				ital: [300],
 			},
 		},
+	},
+	image: {
+		// Options
 	},
 });

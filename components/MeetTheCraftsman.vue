@@ -39,6 +39,7 @@ section {
 	background-color: var(--dark-grey);
 	color: var(--offwhite);
 }
+
 img {
 	width: 100%;
 	height: auto;

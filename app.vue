@@ -100,6 +100,7 @@ button {
 }
 
 .main-content {
+	position: relative;
 	background-color: var(--offwhite);
 	display: flex;
 	color: var(--dark-grey);
