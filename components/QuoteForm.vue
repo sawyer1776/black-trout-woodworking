@@ -277,13 +277,13 @@ export default {
 							name: this.name,
 							email: this.email,
 							phone: this.phone,
-							prefferedContact: this.preffered,
+							contactMethod: this.preffered,
 							description: this.description,
 							dimensions: this.dimensions,
 							materials: this.materials,
 							finish: this.finish,
-							budgetLow: this.budgetLow,
-							budgetHigh: this.budgetHigh,
+							budget:
+								this.budgetLow + 'to' + this.budgetHigh,
 							timeline: this.timeline,
 						}),
 						axiosConfig
