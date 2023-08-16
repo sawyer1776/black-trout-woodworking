@@ -12,7 +12,13 @@
 				alt=""
 			/>
 		</div>
-		<div class="modal-container" v-if="currentImg">
+		<div
+			class="modal-container"
+			@click="
+				screenWidth < 1050 ? (currentImg = null) : null
+			"
+			v-if="currentImg"
+		>
 			<Icon
 				@click="currentImg = null"
 				class="icon close"
@@ -75,7 +81,6 @@ export default {
 				'IMG_3902.webp',
 				'IMG_3903.webp',
 				'IMG_3906.webp',
-				'IMG_3914.webp',
 				'IMG_3908.webp',
 				'IMG_3914.webp',
 				'IMG_3943.webp',
