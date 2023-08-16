@@ -299,6 +299,10 @@ export default {
 					this.error = error;
 					console.log(error);
 				}
+				scrollTo({
+					top: 0,
+					behavior: 'smooth',
+				});
 
 				this.name = '';
 				this.file = null;
