@@ -109,7 +109,7 @@
 				id="description"
 				placeholder="Briefly describe the item or project you'd like to have created."
 			/>
-			<label for="file"
+			<!-- <label for="file"
 				>Attach any sketches, pictures, or inspirations (if
 				available)</label
 			>
@@ -120,7 +120,7 @@
 				id="file"
 				ref="file"
 				@change="handleUpload"
-			/>
+			/> -->
 			<label for="dimensions">Dimensions</label>
 			<input
 				v-model="dimensions"
