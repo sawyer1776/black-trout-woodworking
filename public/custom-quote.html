@@ -7,8 +7,8 @@
     <input class="input" type="email" name="email" id="email" placeholder="Email" maxlength="254" />
     <input class="input" type="tel" name="phone" id="phone" placeholder="Phone" maxlength="14" />
     <fieldset>
-      <input type="radio" id="email-radio" name="contact-method" />
-      <input type="radio" id="phone-radio" name="contact-method" />
+      <input type="radio" id="email-radio" name="contactmethod" />
+      <input type="radio" id="phone-radio" name="contactmethod" />
     </fieldset>
     <textarea class="input" name="description" id="description"
       placeholder="Briefly describe the item or project you'd like to have created." />
@@ -23,9 +23,8 @@
       <input type="radio" id="yes" name="budget" />
       <input type="radio" id="no" name="budget" />
     </fieldset>
-    <input class="input" type="number" name="budget-low" id="budget-low" placeholder="0.00" maxlength="50" />
-    <input class="input" type="number" name="budget-high" id="budget-high" v-model="budgetHigh" placeholder="0.00"
-      maxlength="50" />
+    <input class="input" type="number" name="budgetlow" id="budgetlow" placeholder="0.00" maxlength="50" />
+    <input class="input" type="number" name="budgethigh" id="budgethigh" placeholder="0.00" maxlength="50" />
     <input class="input" type="text" name="timeline" id="timeline" placeholder="e.g., 6 weeks, 3 months, etc."
       maxlength="150" />
     <button type="submit" class="dark submit"> Submit </button>
