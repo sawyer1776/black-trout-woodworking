@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<body>
+  <form name="custom-quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+    <input class="input" type="text" name="name" id="name" placeholder="Name" maxlength="60" />
+    <input class="input" type="email" name="email" id="email" placeholder="Email" maxlength="254" />
+    <input class="input" type="tel" name="phone" id="phone" placeholder="Phone" maxlength="14" />
+    <fieldset>
+      <input type="radio" id="email-radio" name="contact-method" />
+      <input type="radio" id="phone-radio" name="contact-method" />
+    </fieldset>
+    <textarea class="input" name="description" id="description"
+      placeholder="Briefly describe the item or project you'd like to have created." />
+    <input type="file" class="input" name="file" id="file" />
+    <input class="input" type="text" name="dimensions" id="dimensions"
+      placeholder="Include Length, Width, Height, and Units" maxlength="350" />
+    <input class="input" type="text" name="materials" id="materials"
+      placeholder="Type of wood (e.g., oak, walnut, maple, etc.)" maxlength="100" />
+    <input class="input" type="text" name="finish" id="finish" placeholder="Stain/Finish preferences" maxlength="100" />
+    <fieldset>
+      <legend class="label"> Do you have a budget for your project </legend>
+      <input type="radio" id="yes" name="budget" />
+      <input type="radio" id="no" name="budget" />
+    </fieldset>
+    <input class="input" type="number" name="budget-low" id="budget-low" placeholder="0.00" maxlength="50" />
+    <input class="input" type="number" name="budget-high" id="budget-high" v-model="budgetHigh" placeholder="0.00"
+      maxlength="50" />
+    <input class="input" type="text" name="timeline" id="timeline" placeholder="e.g., 6 weeks, 3 months, etc."
+      maxlength="150" />
+    <button type="submit" class="dark submit"> Submit </button>
+  </form>
+</body>
+
+</html>
