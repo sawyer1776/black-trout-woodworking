@@ -24,16 +24,15 @@
 				name="ep:arrow-left-bold"
 				v-if="screenWidth > 1050"
 			/>
-			<nuxt-img
+			<!-- <nuxt-img
 				class="modal-img"
 				:src="`/imgs/${imgList[currentImg - 1]}`"
 				width="400px"
 				height="100%"
 				alt=""
 				v-if="screenWidth <= 550"
-			/>
+			/> -->
 			<nuxt-img
-				v-if="screenWidth > 550"
 				class="modal-img"
 				:src="`/imgs/${imgList[currentImg - 1]}`"
 				width="1200px"
