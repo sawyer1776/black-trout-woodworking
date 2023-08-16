@@ -32,11 +32,9 @@
 				alt=""
 				v-if="screenWidth <= 550"
 			/> -->
-			<nuxt-img
+			<img
 				class="modal-img"
 				:src="`/imgs/${imgList[currentImg - 1]}`"
-				width="1200px"
-				height="500px"
 				alt=""
 			/>
 			<Icon
@@ -66,18 +64,25 @@ export default {
 	data() {
 		return {
 			imgList: [
-				'custom.jpg',
-				'gallery-link.jpg',
-				'hero-background.jpg',
-				'custom.jpg',
-				'profile.jpeg',
-				'gallery-link.jpg',
-				'logo-transparent.png',
-				'profile.jpeg',
-				'custom.jpg',
-				'gallery-link.jpg',
-				'profile.jpeg',
-				'custom.jpg',
+				'IMG_3622.webp',
+				'IMG_3624.webp',
+				'IMG_3767.webp',
+				'IMG_3769.webp',
+				'IMG_3775.webp',
+				'IMG_3778.webp',
+				'IMG_3845.webp',
+				'IMG_3847.webp',
+				'IMG_3902.webp',
+				'IMG_3903.webp',
+				'IMG_3906.webp',
+				'IMG_3914.webp',
+				'IMG_3908.webp',
+				'IMG_3914.webp',
+				'IMG_3943.webp',
+				'IMG_3947.webp',
+				'IMG_4040.webp',
+				'IMG_4116.webp',
+				'IMG_4117.webp',
 			],
 			currentImg: null,
 			screenWidth: 400,
