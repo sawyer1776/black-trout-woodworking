@@ -36,7 +36,7 @@
 				class="modal-img"
 				:src="`/imgs/${imgList[currentImg - 1]}`"
 				width="1200px"
-				height="100%"
+				height="500px"
 				alt=""
 			/>
 			<Icon
