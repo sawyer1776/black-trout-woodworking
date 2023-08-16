@@ -157,10 +157,11 @@ li:last-child {
 	}
 	.hidden {
 		display: flex;
-		flex-direction: row;
-		gap: 1rem;
 	}
 	ul {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
 		position: static;
 		background-color: transparent;
 
