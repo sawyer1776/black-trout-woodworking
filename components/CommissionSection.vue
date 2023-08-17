@@ -2,7 +2,7 @@
 	<aside>
 		<h3>Ready to commission something great?</h3>
 		<button class="dark">
-			<NuxtLink to="/custom-quote"
+			<NuxtLink to="/request-quote"
 				>Request A Quote</NuxtLink
 			>
 		</button>

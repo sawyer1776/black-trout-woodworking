@@ -15,7 +15,7 @@
 			</div>
 			<div class="buttons">
 				<button>
-					<NuxtLink to="/custom-quote"
+					<NuxtLink to="/request-quote"
 						>Request A Quote</NuxtLink
 					>
 				</button>

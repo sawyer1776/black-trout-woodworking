@@ -5,7 +5,7 @@
 				<NuxtLink to="learn-more">About</NuxtLink>
 			</li>
 			<li>
-				<NuxtLink to="custom-quote"
+				<NuxtLink to="/request-quote"
 					>Request A Quote</NuxtLink
 				>
 			</li>

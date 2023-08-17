@@ -59,7 +59,7 @@
 			Love what you see? Get in touch to have one of your
 			own.
 		</p>
-		<NuxtLink to="/custom-quote">
+		<NuxtLink to="/request-quote">
 			<button class="dark">Request A Quote</button>
 		</NuxtLink>
 	</div>

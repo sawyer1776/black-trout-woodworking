@@ -14,7 +14,7 @@
 			<NuxtLink to="/gallery">View Gallery</NuxtLink>
 		</button>
 		<button class="dark">
-			<NuxtLink to="/custom-quote"
+			<NuxtLink to="/request-quote"
 				>Request A Quote</NuxtLink
 			>
 		</button>
