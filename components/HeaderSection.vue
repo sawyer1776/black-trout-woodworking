@@ -24,13 +24,23 @@
 				<li>
 					<NuxtLink to="/gallery">Gallery</NuxtLink>
 				</li>
-				<li>
-					<NuxtLink to="/learn-more">Learn More</NuxtLink>
+				<li
+					class="learn-more"
+					@mouseenter="showMore = true"
+					@mouseleave="showMore = false"
+				>
+					<div @click="showMore = !showMore">
+						Learn More
+					</div>
+					<div class="learn-more-links" v-if="showMore">
+						<NuxtLink to="/FAQ">FAQ</NuxtLink>
+						<NuxtLink to="/about-us">About Us</NuxtLink>
+					</div>
 				</li>
 			</ul>
 			<div class="menu-contact">
 				<Icon
-					@click="toggleMenu"
+					@click="toggleMenu(), (showMore = true)"
 					class="icon"
 					:name="
 						showMenu ? 'ep:close-bold' : 'ic:baseline-menu'
@@ -44,7 +54,8 @@
 export default {
 	data() {
 		return {
-			showMenu: false,
+			showMenu: true,
+			showMore: true,
 		};
 	},
 
@@ -64,6 +75,31 @@ export default {
 </script>
 
 <style scoped>
+.learn-more {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	color: grey;
+}
+.learn-more a {
+	color: var(--offwhite);
+	font-size: 2.5rem;
+	padding-right: 2rem;
+	padding-bottom: 1rem;
+}
+
+.learn-more a:last-child {
+	border-bottom: none;
+}
+
+.learn-more-links {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -75,8 +111,8 @@ nav {
 	position: sticky;
 	top: 0;
 	z-index: 1000;
-	background-color: var(--offwhite);
-	border-bottom: 2px solid var(--medium-grey);
+	background-color: white;
+	/* border-bottom: 2px solid var(--medium-grey); */
 }
 
 button {
@@ -152,6 +188,22 @@ li:last-child {
 }
 
 @media (min-width: 1050px) {
+	.learn-more {
+		color: var(--dark-grey);
+	}
+
+	.learn-more a {
+		border-bottom: 1px solid var(--offwhite);
+	}
+
+	.learn-more-links {
+		border: 2px solid var(--dark-grey);
+		border-top: none;
+		position: absolute;
+		bottom: -8rem;
+		padding: 1rem 1.5rem;
+		background-color: rgba(18, 18, 18, 0.79);
+	}
 	.icon {
 		display: none;
 	}

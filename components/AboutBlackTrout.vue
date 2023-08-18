@@ -1,12 +1,12 @@
 <template>
 	<section>
 		<img
-			src="/imgs/slab-profile.webp"
+			src="/imgs/IMG_4116.webp"
 			alt="A picture of the craftsman"
 		/>
 		<div class="text">
 			<div>
-				<h3>Meet The Craftsman</h3>
+				<h3>About Us</h3>
 				<p>
 					Black Trout Woodworking is an artisan woodworking
 					company based in Southern Oregon. Owned and
@@ -23,36 +23,28 @@
 					finishes for a harmonious fit in your space.
 				</p>
 			</div>
-			<button class="buttons">
-				<NuxtLink to="/request-quote"
-					>Request A Quote</NuxtLink
-				>
-			</button>
 		</div>
 	</section>
 </template>
 
 <style scoped>
 section {
+	margin-top: 2rem;
 	width: 100%;
-
-	background-color: var(--dark-grey);
-	color: var(--offwhite);
 }
 
 img {
 	width: 100%;
 	height: auto;
-	aspect-ratio: 1/1.1;
+	aspect-ratio: 1/0.85;
 	object-fit: cover;
-	object-position: center top;
+	object-position: left center;
 }
 h3 {
 	width: 100%;
 	margin-bottom: 2rem;
 }
 .text {
-	padding: 1.75rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -67,8 +59,8 @@ button {
 @media (min-width: 1050px) {
 	section {
 		display: flex;
-		flex-direction: row-reverse;
-		width: 100%;
+		flex-direction: row;
+		width: 70%;
 	}
 	img {
 		width: 40%;
@@ -78,13 +70,11 @@ button {
 	}
 	h3 {
 		font-size: 4rem;
-		margin-bottom: 3rem;
 	}
 	.text {
 		width: 60%;
-		padding: 5rem;
-		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
+		padding-left: 4rem;
 
 		gap: 1.25rem;
 	}
@@ -98,7 +88,6 @@ button {
 }
 @media (min-width: 1500px) {
 	.text {
-		padding: 8rem;
 	}
 }
 </style>

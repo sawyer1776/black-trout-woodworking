@@ -1,43 +1,36 @@
 <template>
 	<section>
 		<img
-			src="/imgs/slab-profile.webp"
+			src="/imgs/IMG_3778.webp"
 			alt="A picture of the craftsman"
 		/>
 		<div class="text">
 			<div>
-				<h3>Meet The Craftsman</h3>
+				<h3>Custom Quote</h3>
 				<p>
-					Black Trout Woodworking is an artisan woodworking
-					company based in Southern Oregon. Owned and
-					operated by craftsman Hiram Koedam, we focus on
-					creating furniture using fine live edge slabs and
-					hardwoods, all responsibly sourced domestically.
-					We encourage custom requests, knowing the
-					uniqueness each individual seeks. In today's
-					online furniture marketplace, our creations offer
-					a touch of personal craftsmanship. Whether it's a
-					dining table, coffee table, or desk, we work
-					closely with you to ensure the final piece aligns
-					with your vision, selecting the right wood and
-					finishes for a harmonious fit in your space.
+					Complete the form below to request a custom quote
+					for your project. At Black Trout Woodworking, we
+					celebrate individuality. In an online world filled
+					with mass-produced pieces, our handcrafted
+					creations stand out, embodying your unique touch.
+					From dining tables to coffee tables and desks,
+					we're dedicated to ensuring each piece mirrors
+					your vision perfectly. Choose from a range of
+					dimensions, finishes, and design combinations to
+					make it distinctively yours. For a custom quote
+					tailored to your design aspirations, kindly share
+					detailed specifics below, and let's craft your
+					dream together.
 				</p>
 			</div>
-			<button class="buttons">
-				<NuxtLink to="/request-quote"
-					>Request A Quote</NuxtLink
-				>
-			</button>
 		</div>
 	</section>
 </template>
 
 <style scoped>
 section {
+	margin-top: 2rem;
 	width: 100%;
-
-	background-color: var(--dark-grey);
-	color: var(--offwhite);
 }
 
 img {
@@ -52,7 +45,6 @@ h3 {
 	margin-bottom: 2rem;
 }
 .text {
-	padding: 1.75rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -68,7 +60,7 @@ button {
 	section {
 		display: flex;
 		flex-direction: row-reverse;
-		width: 100%;
+		width: 70%;
 	}
 	img {
 		width: 40%;
@@ -78,13 +70,11 @@ button {
 	}
 	h3 {
 		font-size: 4rem;
-		margin-bottom: 3rem;
 	}
 	.text {
 		width: 60%;
-		padding: 5rem;
-		justify-content: space-between;
-		align-items: center;
+		align-items: flex-start;
+		padding-right: 4rem;
 
 		gap: 1.25rem;
 	}
@@ -98,7 +88,6 @@ button {
 }
 @media (min-width: 1500px) {
 	.text {
-		padding: 8rem;
 	}
 }
 </style>

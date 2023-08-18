@@ -6,7 +6,7 @@
 
 <style>
 :root {
-	--offwhite: #fffdf9;
+	--offwhite: #ffffff;
 	--dark-grey: #0d0d0d;
 	--medium-grey: #303030;
 	--light-grey: #e5e4e1;
