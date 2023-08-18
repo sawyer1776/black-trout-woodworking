@@ -42,7 +42,7 @@
 			is not just unique but also a poignant reminder of
 			nature's enduring artistry. At Black Trout
 			Woodworking, we craft not just furniture, but
-			legacies. Let's join hands and shape yours.
+			legacies. Let's collaborate and craft your story.
 		</p>
 	</section>
 </template>
@@ -115,10 +115,6 @@ button {
 	}
 	button {
 		width: 100%;
-	}
-}
-@media (min-width: 1500px) {
-	.text {
 	}
 }
 </style>
