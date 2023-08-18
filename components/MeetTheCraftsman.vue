@@ -24,8 +24,8 @@
 				</p>
 			</div>
 			<button class="buttons">
-				<NuxtLink to="/request-quote"
-					>Request A Quote</NuxtLink
+				<NuxtLink to="/about-us"
+					>Meet The Craftsman</NuxtLink
 				>
 			</button>
 		</div>
