@@ -2,7 +2,20 @@
 	<footer>
 		<ul>
 			<li>
-				<NuxtLink to="learn-more">About</NuxtLink>
+				<div
+					class="show-more-dummy"
+					@click="showMore = !showMore"
+				>
+					Learn More
+				</div>
+				<div v-if="showMore" class="show-more">
+					<NuxtLink @click="showMore = false" to="about-us"
+						>About Us</NuxtLink
+					>
+					<NuxtLink @click="showMore = false" to="FAQ"
+						>FAQ</NuxtLink
+					>
+				</div>
 			</li>
 			<li>
 				<NuxtLink to="/request-quote"
@@ -50,6 +63,7 @@ export default {
 			showEmail: false,
 			showAlertEmail: false,
 			showAlertPhone: false,
+			showMore: false,
 		};
 	},
 	methods: {
@@ -96,6 +110,17 @@ footer {
 	color: var(--medium-grey);
 	padding: 1rem;
 	padding-top: 4rem;
+}
+
+.show-more-dummy:hover {
+	cursor: pointer;
+}
+
+.show-more {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem 2rem;
+	gap: 1rem;
 }
 
 ul {

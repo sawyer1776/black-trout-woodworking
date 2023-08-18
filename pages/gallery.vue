@@ -79,7 +79,6 @@ export default {
 				'IMG_3845.webp',
 				'IMG_3847.webp',
 				'IMG_3902.webp',
-				'IMG_3903.webp',
 				'IMG_3906.webp',
 				'IMG_3908.webp',
 				'IMG_3914.webp',

@@ -7,7 +7,7 @@
 		/>
 
 		<h2>
-			Responsible, hand built custom furniture from southern
+			Responsible, hand built custom furniture from Southern
 			Oregon. Shipped nationwide
 		</h2>
 		<button class="white">

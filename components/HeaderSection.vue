@@ -54,7 +54,7 @@
 export default {
 	data() {
 		return {
-			showMenu: true,
+			showMenu: false,
 			showMore: false,
 		};
 	},

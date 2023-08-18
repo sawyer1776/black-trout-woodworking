@@ -6,7 +6,7 @@
 		/>
 		<div class="text">
 			<div>
-				<h3>Meet The Craftsman</h3>
+				<h3>About Us</h3>
 				<p>
 					Black Trout Woodworking is an artisan woodworking
 					company based in Southern Oregon. Owned and

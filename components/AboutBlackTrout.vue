@@ -1,45 +1,32 @@
 <template>
-	<section>
-		<img
-			src="/imgs/IMG_4116.webp"
-			alt="A picture of the craftsman"
-		/>
-		<div class="text">
-			<div>
-				<h3>About Us</h3>
-				<p>
-					Black Trout Woodworking is an artisan woodworking
-					company based in Southern Oregon. Owned and
-					operated by craftsman Hiram Koedam, we focus on
-					creating furniture using fine live edge slabs and
-					hardwoods, all responsibly sourced domestically.
-					We encourage custom requests, knowing the
-					uniqueness each individual seeks. In today's
-					online furniture marketplace, our creations offer
-					a touch of personal craftsmanship. Whether it's a
-					dining table, coffee table, or desk, we work
-					closely with you to ensure the final piece aligns
-					with your vision, selecting the right wood and
-					finishes for a harmonious fit in your space.
-				</p>
-			</div>
+	<section class="text">
+		<div>
+			<h3>About Us</h3>
+			<p>
+				Black Trout Woodworking is an artisan woodworking
+				company based in Southern Oregon. Owned and operated
+				by craftsman Hiram Koedam, we focus on creating
+				furniture using fine live edge slabs and hardwoods,
+				all responsibly sourced domestically. We encourage
+				custom requests, knowing the uniqueness each
+				individual seeks. In today's online furniture
+				marketplace, our creations offer a touch of personal
+				craftsmanship. Whether it's a dining table, coffee
+				table, or desk, we work closely with you to ensure
+				the final piece aligns with your vision, selecting
+				the right wood and finishes for a harmonious fit in
+				your space.
+			</p>
 		</div>
 	</section>
 </template>
 
 <style scoped>
 section {
-	margin-top: 2rem;
+	margin-top: 0rem;
 	width: 100%;
 }
 
-img {
-	width: 100%;
-	height: auto;
-	aspect-ratio: 1/0.85;
-	object-fit: cover;
-	object-position: left center;
-}
 h3 {
 	width: 100%;
 	margin-bottom: 2rem;
@@ -62,9 +49,7 @@ button {
 		flex-direction: row;
 		width: 70%;
 	}
-	img {
-		width: 40%;
-	}
+
 	p {
 		font-size: 2.25rem;
 	}
@@ -72,9 +57,7 @@ button {
 		font-size: 4rem;
 	}
 	.text {
-		width: 60%;
 		align-items: flex-start;
-		padding-left: 4rem;
 
 		gap: 1.25rem;
 	}
@@ -84,10 +67,6 @@ button {
 	}
 	button {
 		width: 100%;
-	}
-}
-@media (min-width: 1500px) {
-	.text {
 	}
 }
 </style>

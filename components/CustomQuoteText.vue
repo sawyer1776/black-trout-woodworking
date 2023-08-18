@@ -9,13 +9,14 @@
 				<h3>Custom Quote</h3>
 				<p>
 					Complete the form below to request a custom quote
-					for your project. At Black Trout Woodworking, we
-					celebrate individuality. In an online world filled
-					with mass-produced pieces, our handcrafted
-					creations stand out, embodying your unique touch.
-					From dining tables to coffee tables and desks,
-					we're dedicated to ensuring each piece mirrors
-					your vision perfectly. Choose from a range of
+					for your project. <br /><br />
+					At Black Trout Woodworking, we celebrate
+					individuality. In an online world filled with
+					mass-produced pieces, our handcrafted creations
+					stand out, embodying your unique touch. From
+					dining tables to coffee tables and desks, we're
+					dedicated to ensuring each piece mirrors your
+					vision perfectly. Choose from a range of
 					dimensions, finishes, and design combinations to
 					make it distinctively yours. For a custom quote
 					tailored to your design aspirations, kindly share
