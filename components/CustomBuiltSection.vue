@@ -20,7 +20,7 @@
 					>
 				</button>
 				<button class="dark">
-					<NuxtLink to="/learn-more"
+					<NuxtLink to="/about-us"
 						>Meet The Craftsman</NuxtLink
 					>
 				</button>
