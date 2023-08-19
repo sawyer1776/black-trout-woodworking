@@ -94,7 +94,36 @@ export default {
 	},
 	mounted() {
 		this.screenWidth = window.innerWidth;
+		window.addEventListener('keydown', this.keyDownHandler);
 		console.log(this.screenWidth);
+	},
+
+	methods: {
+		keyDownHandler(e) {
+			console.log(e.key);
+			if (e.key === 'Escape') {
+				this.currentImg = null;
+			}
+			if (e.key === 'ArrowRight') {
+				this.currentImg < this.imgList.length
+					? (this.currentImg += 1)
+					: null;
+			}
+			if (e.key === 'ArrowLeft') {
+				this.currentImg > 1 ? (this.currentImg -= 1) : null;
+			}
+			// Your handler code here
+		},
+		// },
+		// created() {
+		// 	console.log('created');
+		// },
+		// destroyed() {
+		// 	console.log('destroyed');
+		// 	window.removeEventListener(
+		// 		'keydown',
+		// 		this.keyDownHandler
+		// 	);
 	},
 };
 </script>
